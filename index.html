@@ -110,13 +110,18 @@
 									JavaScript is my first language. Then it's English. But like also Spanish. 
 								</p>
 								<section>
-									<h2>Stretch Goal</h2>
-									<div>
-										<img class="blog" src="images/codesnippet-1.png" alt="a five line snippet of js code that plays animations on page load">
-									</div>
-									
+									<h2>Stretch Goal: Responsive Web Design II</h2><br>
 									<p>
-										There weren't many JavaScript 
+										I didn't find many JavaScript animations that would have been useful to tweak in my template. It seems most of them were done in CSS. I did, however, find a function I've come across before but didn't understand so well: <i>setTimeout()</i>
+									<div>
+										<img class="blog" src="images/codesnippet-1.png" alt="a five line snippet of js code">
+									</div>
+										
+										<br>I knew this particular use of the function delays page load to prevent lag by allowing things like images to load before showing the page.<br><br>I saw evidence of this in the stylesheet and understood <i>setTimeout()</i> better by looking closer at the class selector <i>body.is-preload</i>.
+									</p>
+									<img src="images/is-preload.png">
+									<p>
+										I noticed that the values for all the animations listed inside the <i>body.is-preload</i> class selector were set to <i>none</i> with an applied <i>!important</i> property which overrides any other set rules to those animations.<br><br>I also noticed that <i>removeClass</i> is used to remove the <i>.is-preload class from the body which removes that sweet fade animation entirely.</i> <br><br>But why would we turn off all animations?<br><br>Well, by looking at our <i>setTimeout function</i> we aren't turning them off forever. We are only turning them off for 100 miliseconds or .1 second. During this time we're giving the <i>onload</i> event time to trigger. Soooo once everything is loaded (onload triggered) we are safe to load our animation and reveal our wonderful contents.<br><br>But why wait?<br>Well, how much less epic would landing on my page be if you didn't have an aerial view of Mt. Fuji there to greet you? A lot.<br><br>Anyway, it's my second week in Full-Stack Web at Lambda School, so this is just my first-take. Do me a favor and treat this text as lorem ipsum. Here is a good article on <a href="https://mathiasbynens.be/notes/settimeout-onload">good examples</a> of using setTimeout() like I think it was. 
 									</p>
 								</section>
 							</article>
