@@ -1544,6 +1544,12 @@ input, select, textarea {
 
 		}
 
+/* Blog */
+
+.blog {
+	margin-top: 1em;
+}
+
 /* Image */
 
 	.image {
@@ -1769,41 +1775,7 @@ input, select, textarea {
 		.icon > .label {
 			display: none;
 		}
-/* github icon */
-.fab {
-	text-decoration: none;
-	position: relative;
-	text-decoration: none;
-}
 
-	.fab:before {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		display: inline-block;
-		font-style: normal;
-		font-variant: normal;
-		text-rendering: auto;
-		line-height: 1;
-		text-transform: none !important;
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 400;
-	}
-
-	.fab.fa-github-square:before {
-		font-weight: 900;
-	}
-
-	.fab.fa-github-square:before {
-		font-family: 'Font Awesome 5 Brands';
-	}
-
-	.fab:before {
-		line-height: inherit;
-	}
-
-	.fab > .label {
-		display: none;
-	}
 
 /* Nav */
 
