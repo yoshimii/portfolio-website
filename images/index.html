@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Emma Zarate</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="https://github.com/yoshimii" class="fab fa-github-square"><span>GitHub</span></a>
+						<a href="#blog" class="icon solid fa-newspaper"><span>Blog</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Emma Zarate</h1>
+									<p>Sr. Software Developer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/mtfuji-from-plane.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Live Code</h2>
+								</header>
+								<p>
+									A mix of school and personal projects. 
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.emmazarate.dev/colorgame" class="image fit"><img src="images/rgbgame.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.emmazarate.dev/scorekeeper" class="image fit"><img src="images/rushmore.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.emmazarate.dev/01%20-%20javascript%20drum%20kit/index-start" class="image fit"><img src="images/billycool.jfif" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://yoshimii.github.io/responsive-web-design-I/" class="image fit"><img src="images/great-idea.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://yoshimii.github.io/css-clouds/" class="image fit"><img src="images/clouds.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://codepen.io/emmazarate/pen/WqYXEq" class="image fit"><img src="images/sweet-eats.png" alt=""></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+						<!-- Blog Post -->
+							<article id="blog" class="panel">
+								<header>
+									<h2>READ.ME</h2>
+								</header>
+								<p>
+									JavaScript is my first language. Then it's English. But like also Spanish. 
+								</p>
+								<section>
+									<h2>Stretch Goal: Responsive Web Design II</h2><br>
+									<p>
+										I didn't find many JavaScript animations that would have been useful to tweak in my template. It seems most of them were done in CSS. I did, however, find a function I've come across before but didn't understand so well: <i>setTimeout()</i>
+									<div>
+										<img class="blog" src="images/codesnippet-1.png" alt="a five line snippet of js code">
+									</div>
+										
+										<br>I knew this particular use of the function delays page load to prevent lag by allowing things like images to load before showing the page.<br><br>I saw evidence of this in the stylesheet and understood <i>setTimeout()</i> better by looking closer at the class selector <i>body.is-preload</i>.
+									</p>
+									<img src="images/is-preload.png">
+									<p>
+										I noticed that the values for all the animations listed inside the <i>body.is-preload</i> class selector were set to <i>none</i> with an applied <i>!important</i> property which overrides any other set rules to those animations.<br><br>I also noticed that <i>removeClass</i> is used to remove the <i>.is-preload</i> class from the body which removes that sweet fade animation entirely. <br><br>But why would we turn off all animations?<br><br>Well, by looking at our <i>setTimeout function</i> we aren't turning them off forever. We are only turning them off for 100 miliseconds or .1 second. During this time we're giving the <i>onload</i> event time to trigger. Soooo once everything is loaded (onload triggered) we are safe to load our animation and reveal our wonderful contents.<br><br>But why wait?<br>Well, how much less epic would landing on my page be if you didn't have an aerial view of Mt. Fuji there to greet you? A lot.<br><br>Anyway, it's my second week in Full-Stack Web at Lambda School, so this is just my first-take. Do me a favor and treat this text as lorem ipsum. Here is a good article on <a href="https://mathiasbynens.be/notes/settimeout-onload">good examples</a> of using setTimeout() like I think it was. 
+									</p>
+								</section>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Take Me to Your Dev.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
